@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import useDarkMode from '../components/hooks/useDarkMode'
 
 const Navbar = () => {
-  const [darkMode, toggleMode] = useDarkMode(false);
-
+  const [darkMode, toggleMode] = useDarkMode();
+  console.log(darkMode)
   return (
     <nav className="navbar">
       <h1>Crypto Tracker</h1>
